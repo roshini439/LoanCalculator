@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Loan Calculator"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Loan Amount Input -->
+        <EditText
+            android:id="@+id/loanAmountInput"
+            android:hint="Loan Amount"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/input_bg" />
+
+        <!-- Interest Rate Input -->
+        <EditText
+            android:id="@+id/interestRateInput"
+            android:hint="Annual Interest Rate (%)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:background="@drawable/input_bg" />
+
+        <!-- Loan Term Input -->
+        <EditText
+            android:id="@+id/loanTermInput"
+            android:hint="Loan Term (Years)"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:background="@drawable/input_bg" />
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:text="Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+
+        <!-- Monthly Payment Output Label -->
+        <TextView
+            android:text="Monthly Payment:"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Monthly Payment Output -->
+        <TextView
+            android:id="@+id/monthlyPaymentOutput"
+            android:text="₹ 0.00"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#444444" />
+
+        <!-- Total Interest Output Label -->
+        <TextView
+            android:text="Total Interest:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Total Interest Output -->
+        <TextView
+            android:id="@+id/totalInterestOutput"
+            android:text="₹ 0.00"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#444444" />
+    </LinearLayout>
+</ScrollView>
